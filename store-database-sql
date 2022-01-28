@@ -1,0 +1,22 @@
+CREATE TABLE store (ID INTEGER PRIMARY KEY, Name TEXT, Price INTEGER, Stock INTEGER, Available TEXT, Colors TEXT);
+
+INSERT INTO store VALUES (1, "Item1", 10, 5, "Yes", "No");
+INSERT INTO store VALUES (2, "Item2", 15, 10, "Yes", "No");
+INSERT INTO store VALUES (3, "Item3", 40, 10, "No", "Yes");
+INSERT INTO store VALUES (4, "Item4", 10, 5, "Yes", "No");
+INSERT INTO store VALUES (5, "Item5", 15, 3, "No", "Yes");
+INSERT INTO store VALUES (6, "Item6", 45, 5, "No", "Yes");
+INSERT INTO store VALUES (7, "Item7", 13, 14, "No", "No");
+INSERT INTO store VALUES (8, "Item8", 15, 2, "Yes", "Yes");
+INSERT INTO store VALUES (9, "Item9", 13, 4, "No", "Yes");
+INSERT INTO store VALUES (10, "Item10", 5, 15, "Yes", "No");
+INSERT INTO store VALUES (11, "Item11", 4, 14, "No", "Yes");
+INSERT INTO store VALUES (12, "Item12", 1, 50, "No", "No");
+INSERT INTO store VALUES (13, "Item13", 40, 1, "No", "Yes");
+INSERT INTO store VALUES (14, "Item14", 10, 7, "Yes", "No");
+INSERT INTO store VALUES (15, "Item15", 10, 8, "Yes", "No");
+
+SELECT * FROM store ORDER BY Price; 
+
+SELECT SUM(Stock) FROM store;
+SELECT * FROM store;
